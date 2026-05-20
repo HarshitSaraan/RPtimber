@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Detail – RP Timbers Pvt Ltd</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html#home" class="logo">
+        <!-- Optional logo image -->
+        <!-- <img src="images/logo.png" alt="RP Timbers Logo" class="logo-img"> -->
+        <span>RP TIMBERS PVT LTD</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html#home" class="nav-link">HOME</a></li>
+        <li><a href="index.html#products" class="nav-link">PRODUCTS</a></li>
+        <li><a href="index.html#about" class="nav-link">ABOUT US</a></li>
+        <li><a href="enquiry.html" class="nav-link nav-enquire">ENQUIRE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="product-detail-main">
+
+    <!-- ===== HERO ===== -->
+    <section class="product-detail-hero">
+      <!-- IMAGE SLIDER -->
+      <div class="pd-hero-slider">
+        <div class="pd-hero-slides" id="pd-hero-slides"></div>
+      </div>
+
+      <!-- CONTROLS OUTSIDE IMAGE -->
+      <div class="pd-controls">
+        <button class="pd-nav prev" aria-label="Previous image"><img src="small-left.svg" alt=""></button>
+        <button class="pd-nav next" aria-label="Next image"><img src="small-right.svg" alt=""></button>
+      </div>
+      <!-- TEXT OVERLAY -->
+      <div class="container pd-hero-content">
+        <p class="product-breadcrumb">
+          <a href="index.html#products">Collections</a> /
+          <span id="pd-category">Category</span>
+        </p>
+
+        <h1 id="pd-title">Product Name</h1>
+
+        <p id="pd-short">
+          Product short description will load dynamically.
+        </p>
+
+        <a href="enquiry.html" class="btn btn-primary pd-enquire-btn">
+          ENQUIRE ABOUT THIS PRODUCT
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ===== PRODUCT DETAILS ===== -->
+    <section class="product-detail-body">
+      <div class="container">
+
+        <h2>Overview</h2>
+        <p id="pd-long">
+          Product description will load dynamically based on the selected
+          variant.
+        </p>
+
+        <h3>Key Specifications</h3>
+        <ul class="pd-spec-list">
+          <li>Type / Variant: <span id="pd-spec-type">—</span></li>
+          <li>Supply Form: Sawn timber</li>
+        </ul>
+
+        <p class="pd-note">
+          Specifications may vary based on availability and customization.
+          Please contact our team for detailed technical information.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== SIMPLE FOOTER ===== -->
+  <footer class="simple-footer">
+    <div class="container">
+      <p>© <span id="year"></span> RP Timbers Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

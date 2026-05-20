@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquiry – RP Timbers Pvt Ltd</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Same navbar but links go back to index.html -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <div class="logo">RP TIMBERS PVT LTD</div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html#home" class="nav-link">HOME</a></li>
+        <li><a href="index.html#products" class="nav-link">PRODUCTS</a></li>
+        <li><a href="index.html#about" class="nav-link">ABOUT US</a></li>
+        <li><a href="enquiry.html" class="nav-link nav-enquire active">ENQUIRE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="enquiry-main">
+    <section class="enquiry-hero">
+      <div class="container">
+        <h1>Project Enquiry</h1>
+        <p>
+          Share a few details about your project and our team will get in touch
+          with you to discuss specifications, timelines and samples.
+        </p>
+      </div>
+    </section>
+
+    <section class="enquiry-form-section">
+      <div class="container enquiry-form-wrapper">
+        <form id="enquiry-form" class="enquiry-form">
+          <div class="form-row">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="contact">Contact Number*</label>
+            <input type="tel" id="contact" name="contact" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="category">Category of Interest*</label>
+            <select id="category" name="category" required>
+              <option value="">Select a category</option>
+              <option value="Hardwood">Hardwood</option>
+              <option value="Teakwood">Teakwood</option>
+              <option value="Pinewood">Pinewood</option>
+              <option value="Manufactured Collection">Manufactured Collection</option>
+              <option value="Other">Other / Not sure</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="description">Project Description*</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="6"
+              placeholder="Tell us about your project, application, quantity, timelines…"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            SEND ENQUIRY
+          </button>
+
+          <p class="form-note">
+            On submit, your email app will open with all details filled in.  
+            Just review &amp; press send.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Optional: re-use a simple footer -->
+  <footer class="simple-footer">
+    <div class="container">
+      <p>© <span id="year"></span> RP Timbers Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
